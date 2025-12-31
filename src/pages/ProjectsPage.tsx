@@ -2,6 +2,7 @@ import Layout from "@/components/layout/Layout";
 import SectionTitle from "@/components/ui/SectionTitle";
 import ProjectCard from "@/components/projects/ProjectCard";
 import PlaceholderImage from "@/components/ui/PlaceholderImage";
+import EvidenceGallery from "@/components/projects/EvidenceGallery";
 import { Video } from "lucide-react";
 
 const ProjectsPage = () => {
@@ -51,10 +52,14 @@ const ProjectsPage = () => {
                 </div>
               }
               evidence={
-                <div className="grid sm:grid-cols-2 gap-4">
-                  <PlaceholderImage label="Ảnh chụp cấu trúc thư mục" />
-                  <PlaceholderImage label="Ảnh chụp ví dụ đặt tên tệp" />
-                </div>
+                <EvidenceGallery
+                  items={[
+                    { type: "image", label: "Ảnh chụp cấu trúc thư mục gốc", caption: "Cấu trúc thư mục gốc cho toàn bộ tài liệu học tập, phân chia theo năm học và học kỳ." },
+                    { type: "image", label: "Ảnh chụp thư mục con theo môn học", caption: "Hệ thống thư mục con được tổ chức theo từng môn học trong học kỳ." },
+                    { type: "image", label: "Ảnh chụp phân loại tệp tin", caption: "Tệp tin được phân loại theo loại nội dung: bài giảng, bài tập, tài liệu tham khảo." },
+                    { type: "image", label: "Ảnh chụp quy tắc đặt tên", caption: "Minh họa quy tắc đặt tên tệp thống nhất: [MãMôn]_[TênTàiLiệu]_[Ngày]." },
+                  ]}
+                />
               }
               reflection={
                 <div className="space-y-3 text-body">
@@ -96,10 +101,15 @@ const ProjectsPage = () => {
                 </div>
               }
               evidence={
-                <div className="grid sm:grid-cols-2 gap-4">
-                  <PlaceholderImage label="Ảnh chụp truy vấn tìm kiếm" />
-                  <PlaceholderImage label="Ảnh chụp kết quả tìm kiếm" />
-                </div>
+                <EvidenceGallery
+                  items={[
+                    { type: "image", label: "Ảnh chụp sử dụng toán tử site:", caption: "Sử dụng toán tử site: để giới hạn tìm kiếm trong phạm vi nguồn học thuật uy tín." },
+                    { type: "image", label: "Ảnh chụp sử dụng toán tử filetype:", caption: "Sử dụng toán tử filetype:pdf để tìm kiếm tài liệu định dạng PDF." },
+                    { type: "image", label: "Ảnh chụp kết quả Google Scholar", caption: "Kết quả tìm kiếm từ Google Scholar với các bài báo học thuật có phản biện." },
+                    { type: "image", label: "Ảnh chụp đánh giá nguồn CRAAP", caption: "Áp dụng tiêu chí CRAAP để đánh giá độ tin cậy của nguồn thông tin." },
+                    { type: "image", label: "Ảnh chụp so sánh nguồn tin", caption: "So sánh độ tin cậy giữa nguồn học thuật và nguồn phi học thuật." },
+                  ]}
+                />
               }
               reflection={
                 <div className="space-y-3 text-body">
@@ -151,10 +161,15 @@ const ProjectsPage = () => {
                 </div>
               }
               evidence={
-                <div className="grid sm:grid-cols-2 gap-4">
-                  <PlaceholderImage label="Ảnh chụp prompt và phản hồi 1" />
-                  <PlaceholderImage label="Ảnh chụp prompt và phản hồi 2" />
-                </div>
+                <EvidenceGallery
+                  items={[
+                    { type: "image", label: "Ảnh chụp prompt kém hiệu quả", caption: "Prompt ban đầu thiếu ngữ cảnh và yêu cầu cụ thể, dẫn đến kết quả chung chung." },
+                    { type: "image", label: "Ảnh chụp kết quả prompt kém", caption: "Phản hồi từ AI với prompt kém hiệu quả - thông tin không có cấu trúc rõ ràng." },
+                    { type: "image", label: "Ảnh chụp prompt cải tiến", caption: "Prompt cải tiến với đầy đủ ngữ cảnh, đối tượng và định dạng đầu ra mong muốn." },
+                    { type: "image", label: "Ảnh chụp kết quả prompt cải tiến", caption: "Phản hồi từ AI với prompt cải tiến - nội dung có cấu trúc, phù hợp với yêu cầu." },
+                    { type: "image", label: "Ảnh chụp bảng so sánh", caption: "Bảng so sánh chi tiết sự khác biệt giữa hai loại prompt và kết quả tương ứng." },
+                  ]}
+                />
               }
               reflection={
                 <div className="space-y-3 text-body">
@@ -194,10 +209,16 @@ const ProjectsPage = () => {
                 </div>
               }
               evidence={
-                <div className="grid sm:grid-cols-2 gap-4">
-                  <PlaceholderImage label="Ảnh chụp giao diện không gian làm việc" />
-                  <PlaceholderImage label="Ảnh chụp bảng quản lý nhiệm vụ" />
-                </div>
+                <EvidenceGallery
+                  items={[
+                    { type: "image", label: "Ảnh chụp thiết lập workspace", caption: "Giao diện thiết lập không gian làm việc nhóm trên Trello/Notion." },
+                    { type: "image", label: "Ảnh chụp bảng Kanban", caption: "Bảng Kanban với các cột trạng thái: Cần làm, Đang làm, Hoàn thành." },
+                    { type: "image", label: "Ảnh chụp phân công nhiệm vụ", caption: "Giao diện phân công nhiệm vụ cho từng thành viên trong nhóm." },
+                    { type: "image", label: "Ảnh chụp theo dõi tiến độ", caption: "Biểu đồ hoặc báo cáo theo dõi tiến độ hoàn thành công việc." },
+                    { type: "image", label: "Ảnh chụp chia sẻ tài liệu", caption: "Giao diện chia sẻ tài liệu và bình luận phản hồi giữa các thành viên." },
+                    { type: "video", label: "Video hướng dẫn sử dụng", caption: "Video ngắn hướng dẫn quy trình sử dụng công cụ hợp tác trong dự án nhóm." },
+                  ]}
+                />
               }
               reflection={
                 <div className="space-y-3 text-body">
@@ -238,20 +259,17 @@ const ProjectsPage = () => {
                 </div>
               }
               evidence={
-                <div className="space-y-4">
-                  <div className="grid sm:grid-cols-2 gap-4">
-                    <PlaceholderImage label="Ảnh chụp quá trình tạo nội dung" />
-                    <PlaceholderImage label="Ảnh chụp giao diện chỉnh sửa" />
-                  </div>
-                  <div className="bg-section-bg rounded-lg p-6 flex items-center justify-center h-48">
-                    <div className="text-center">
-                      <Video className="w-12 h-12 mx-auto mb-3 text-muted-foreground/50" />
-                      <p className="text-sm text-muted-foreground">
-                        Video giáo dục (dưới 5 phút) sẽ được nhúng tại đây
-                      </p>
-                    </div>
-                  </div>
-                </div>
+                <EvidenceGallery
+                  defaultOpen={true}
+                  items={[
+                    { type: "image", label: "Ảnh chụp lên ý tưởng với AI", caption: "Sử dụng AI để brainstorm ý tưởng và xây dựng dàn ý cho video giáo dục." },
+                    { type: "image", label: "Ảnh chụp kịch bản video", caption: "Kịch bản video được viết với sự hỗ trợ của công cụ AI." },
+                    { type: "image", label: "Ảnh chụp tạo hình ảnh AI", caption: "Sử dụng công cụ AI tạo sinh để tạo hình ảnh minh họa cho video." },
+                    { type: "image", label: "Ảnh chụp giao diện chỉnh sửa", caption: "Giao diện phần mềm chỉnh sửa video với các lớp nội dung và timeline." },
+                    { type: "image", label: "Ảnh chụp xuất bản video", caption: "Quá trình xuất bản và hoàn thiện video giáo dục cuối cùng." },
+                    { type: "video", label: "Video giáo dục hoàn chỉnh", caption: "Video giáo dục hoàn chỉnh (dưới 5 phút) về chủ đề đã chọn." },
+                  ]}
+                />
               }
               reflection={
                 <div className="space-y-3 text-body">
@@ -293,9 +311,14 @@ const ProjectsPage = () => {
                 </div>
               }
               evidence={
-                <PlaceholderImage 
-                  label="Sơ đồ/bảng minh họa các nguyên tắc đạo đức" 
-                  height="h-64"
+                <EvidenceGallery
+                  items={[
+                    { type: "image", label: "Sơ đồ nguyên tắc đạo đức AI", caption: "Sơ đồ tổng quan các nguyên tắc đạo đức khi sử dụng AI trong học tập." },
+                    { type: "image", label: "Bảng phân tích trường hợp", caption: "Bảng phân tích các trường hợp vi phạm và tuân thủ liêm chính học thuật." },
+                    { type: "image", label: "Ảnh chụp chính sách AI trường ĐH", caption: "Tổng hợp chính sách sử dụng AI của các trường đại học trong và ngoài nước." },
+                    { type: "image", label: "Infographic ranh giới AI", caption: "Infographic minh họa ranh giới giữa hỗ trợ hợp lệ và gian lận học thuật." },
+                    { type: "image", label: "Bộ nguyên tắc cá nhân", caption: "Bộ 7 nguyên tắc cá nhân về sử dụng AI có trách nhiệm được trình bày dạng poster." },
+                  ]}
                 />
               }
               reflection={
