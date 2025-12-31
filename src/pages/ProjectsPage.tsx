@@ -5,6 +5,10 @@ import PlaceholderImage from "@/components/ui/PlaceholderImage";
 import EvidenceGallery from "@/components/projects/EvidenceGallery";
 import { Video } from "lucide-react";
 
+import chapter1Img1 from "@/assets/chapter1-img1.jpg";
+import chapter1Img2 from "@/assets/chapter1-img2.jpg";
+import chapter1Img3 from "@/assets/chapter1-img3.jpg";
+
 const ProjectsPage = () => {
   return (
     <Layout>
@@ -54,10 +58,9 @@ const ProjectsPage = () => {
               evidence={
                 <EvidenceGallery
                   items={[
-                    { type: "image", label: "Ảnh chụp cấu trúc thư mục gốc", caption: "Cấu trúc thư mục gốc cho toàn bộ tài liệu học tập, phân chia theo năm học và học kỳ." },
-                    { type: "image", label: "Ảnh chụp thư mục con theo môn học", caption: "Hệ thống thư mục con được tổ chức theo từng môn học trong học kỳ." },
-                    { type: "image", label: "Ảnh chụp phân loại tệp tin", caption: "Tệp tin được phân loại theo loại nội dung: bài giảng, bài tập, tài liệu tham khảo." },
-                    { type: "image", label: "Ảnh chụp quy tắc đặt tên", caption: "Minh họa quy tắc đặt tên tệp thống nhất: [MãMôn]_[TênTàiLiệu]_[Ngày]." },
+                    { type: "image", label: "Ảnh chụp cấu trúc thư mục gốc", caption: "Tạo thư mục gốc cho môn học để lưu trữ tài liệu liên quan.", src: chapter1Img1 },
+                    { type: "image", label: "Ảnh chụp thư mục con theo môn học", caption: "Phân chia thư mục con tương ứng với từng môn học: Kinh tế vi mô, Triết học, Xác suất thống kê.", src: chapter1Img2 },
+                    { type: "image", label: "Ảnh chụp phân loại tệp tin", caption: "Sắp xếp tệp tin trong mỗi thư mục môn học theo mục đích sử dụng: bài giảng, bài tập, tài liệu tham khảo.", src: chapter1Img3 },
                   ]}
                 />
               }

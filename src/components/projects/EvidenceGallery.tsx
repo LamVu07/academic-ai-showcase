@@ -7,6 +7,7 @@ export interface MediaItem {
   type: "image" | "video";
   label: string;
   caption: string;
+  src?: string;
 }
 
 interface EvidenceGalleryProps {
@@ -55,7 +56,15 @@ const EvidenceGallery = ({ items, defaultOpen = false }: EvidenceGalleryProps) =
           {items.map((item, index) => (
             <figure key={index} className="space-y-2">
               {item.type === "image" ? (
-                <PlaceholderImage label={item.label} height="h-40" />
+                item.src ? (
+                  <img 
+                    src={item.src} 
+                    alt={item.label} 
+                    className="w-full h-40 object-cover rounded-lg border border-border"
+                  />
+                ) : (
+                  <PlaceholderImage label={item.label} height="h-40" />
+                )
               ) : (
                 <div className="bg-section-bg rounded-lg flex items-center justify-center h-40">
                   <div className="text-center p-4">
