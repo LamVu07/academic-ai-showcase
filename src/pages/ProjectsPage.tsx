@@ -39,15 +39,15 @@ const ProjectsPage = () => {
               process={
                 <div className="space-y-3 text-body">
                   <p>
-                    Trong dự án này, tôi đã thực hiện việc tạo cấu trúc thư mục 
-                    gốc cho toàn bộ tài liệu học tập đại học. Hệ thống được tổ 
-                    chức theo các tiêu chí sau:
+                    Trong bài tập này, tôi thực hiện việc tạo cấu trúc thư mục để 
+                    quản lý tài liệu học tập cho các môn học trong chương trình đại 
+                    học. Hệ thống thư mục được tổ chức theo các nguyên tắc sau:
                   </p>
                   <ul className="list-disc list-inside space-y-1 pl-4">
-                    <li>Tạo thư mục gốc cho từng năm học và học kỳ</li>
-                    <li>Phân chia thư mục con theo từng môn học</li>
-                    <li>Sắp xếp tệp tin theo loại nội dung (bài giảng, bài tập, tài liệu tham khảo)</li>
-                    <li>Áp dụng quy tắc đặt tên tệp thống nhất: [MãMôn]_[TênTài liệu]_[Ngày]</li>
+                    <li>Tạo thư mục gốc cho môn học để lưu trữ tài liệu liên quan.</li>
+                    <li>Phân chia thư mục con tương ứng với từng môn học: Kinh tế vi mô, Triết học, Xác suất thống kê.</li>
+                    <li>Sắp xếp tệp tin trong mỗi thư mục môn học theo mục đích sử dụng, bao gồm: bài giảng, bài tập và tài liệu tham khảo.</li>
+                    <li>Thực hiện thao tác tạo, lưu, sao chép và đổi tên tệp tin nhằm làm quen với các thao tác quản lý tập tin cơ bản.</li>
                   </ul>
                 </div>
               }
