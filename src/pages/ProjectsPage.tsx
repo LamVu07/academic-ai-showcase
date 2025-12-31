@@ -168,11 +168,9 @@ const ProjectsPage = () => {
               evidence={
                 <EvidenceGallery
                   items={[
-                    { type: "image", label: "Ảnh chụp prompt kém hiệu quả", caption: "Prompt ban đầu thiếu ngữ cảnh và yêu cầu cụ thể, dẫn đến kết quả chung chung." },
-                    { type: "image", label: "Ảnh chụp kết quả prompt kém", caption: "Phản hồi từ AI với prompt kém hiệu quả - thông tin không có cấu trúc rõ ràng." },
-                    { type: "image", label: "Ảnh chụp prompt cải tiến", caption: "Prompt cải tiến với đầy đủ ngữ cảnh, đối tượng và định dạng đầu ra mong muốn." },
-                    { type: "image", label: "Ảnh chụp kết quả prompt cải tiến", caption: "Phản hồi từ AI với prompt cải tiến - nội dung có cấu trúc, phù hợp với yêu cầu." },
-                    { type: "image", label: "Ảnh chụp bảng so sánh", caption: "Bảng so sánh chi tiết sự khác biệt giữa hai loại prompt và kết quả tương ứng." },
+                    { type: "image", label: "Prompt cơ bản", caption: "Prompt cơ bản tuy nhanh nhưng dễ sinh ra kết quả chung chung." },
+                    { type: "image", label: "Prompt cải tiến", caption: "Prompt cải tiến là điểm cân bằng giữa ngắn gọn và chất lượng." },
+                    { type: "image", label: "Prompt nâng cao", caption: "Prompt nâng cao đầy đủ ngữ cảnh, đối tượng và định dạng đầu ra mong muốn." },
                   ]}
                 />
               }

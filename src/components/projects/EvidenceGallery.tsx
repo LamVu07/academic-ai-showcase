@@ -2,6 +2,7 @@ import { useState } from "react";
 import { ChevronDown, Image as ImageIcon, Video } from "lucide-react";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 import PlaceholderImage from "@/components/ui/PlaceholderImage";
+import ImageZoom from "@/components/ui/ImageZoom";
 
 export interface MediaItem {
   type: "image" | "video";
@@ -57,11 +58,13 @@ const EvidenceGallery = ({ items, defaultOpen = false }: EvidenceGalleryProps) =
             <figure key={index} className="space-y-2">
               {item.type === "image" ? (
                 item.src ? (
-                  <img 
-                    src={item.src} 
-                    alt={item.label} 
-                    className="w-full h-40 object-cover rounded-lg border border-border"
-                  />
+                  <ImageZoom src={item.src} alt={item.label}>
+                    <img 
+                      src={item.src} 
+                      alt={item.label} 
+                      className="w-full h-40 object-cover rounded-lg border border-border hover:border-primary/50 transition-colors"
+                    />
+                  </ImageZoom>
                 ) : (
                   <PlaceholderImage label={item.label} height="h-40" />
                 )
