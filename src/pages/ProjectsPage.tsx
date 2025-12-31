@@ -141,24 +141,40 @@ const ProjectsPage = () => {
                 "Cải thiện khả năng tương tác với công cụ AI",
               ]}
               process={
-                <div className="space-y-3 text-body">
+                <div className="space-y-4 text-body">
                   <p>
                     Dự án này thực hiện so sánh và phân tích cách viết prompt 
-                    hiệu quả khi làm việc với các công cụ AI:
+                    hiệu quả khi làm việc với các công cụ AI, sắp xếp theo mức độ tăng dần:
                   </p>
-                  <div className="bg-section-bg p-4 rounded-lg my-4">
-                    <p className="font-medium text-heading mb-2">Prompt ban đầu (kém hiệu quả):</p>
-                    <p className="italic text-caption">"Giải thích kinh tế vĩ mô"</p>
-                  </div>
-                  <div className="bg-section-bg p-4 rounded-lg my-4">
-                    <p className="font-medium text-heading mb-2">Prompt cải tiến (hiệu quả):</p>
+                  
+                  <div className="bg-section-bg p-4 rounded-lg border-l-4 border-muted-foreground/30">
+                    <p className="font-medium text-heading mb-2">Prompt cơ bản (hiệu quả thấp):</p>
                     <p className="italic text-caption">
-                      "Hãy giải thích 5 khái niệm cơ bản nhất của kinh tế vĩ mô 
-                      dành cho sinh viên năm nhất đại học. Mỗi khái niệm cần có 
-                      định nghĩa ngắn gọn, ví dụ thực tế từ Việt Nam, và một câu 
-                      hỏi tự kiểm tra."
+                      "Tạo 5 câu hỏi trắc nghiệm về chủ đề Chiến tranh thế giới thứ hai."
                     </p>
                   </div>
+                  
+                  <div className="bg-section-bg p-4 rounded-lg border-l-4 border-primary/50">
+                    <p className="font-medium text-heading mb-2">Prompt cải tiến (hiệu quả trung bình):</p>
+                    <p className="italic text-caption">
+                      "Tạo 5 câu hỏi ôn tập về chủ đề Chiến tranh thế giới thứ hai, bao gồm:<br/>
+                      • 3 câu trắc nghiệm (mỗi câu có 4 lựa chọn và đáp án)<br/>
+                      • 2 câu tự luận ngắn<br/>
+                      Độ khó ở mức trung bình, phù hợp với học sinh THPT."
+                    </p>
+                  </div>
+                  
+                  <div className="bg-section-bg p-4 rounded-lg border-l-4 border-primary">
+                    <p className="font-medium text-heading mb-2">Prompt nâng cao (hiệu quả cao):</p>
+                    <p className="italic text-caption">
+                      "Bạn là giáo viên Lịch sử. Hãy tạo một bộ câu hỏi ôn tập cho chủ đề Chiến tranh thế giới thứ hai theo cấu trúc sau:<br/>
+                      • Hai câu trắc nghiệm (mỗi câu có 4 lựa chọn, kèm đáp án và lời giải thích từ 1–2 câu)<br/>
+                      • Hai câu tự luận yêu cầu phân tích nguyên nhân và hậu quả<br/>
+                      • Một câu hỏi vận dụng thực tế, liên hệ bài học lịch sử với các xung đột hiện đại<br/><br/>
+                      Yêu cầu: Trình bày rõ ràng, có đánh số thứ tự câu hỏi, sử dụng ngôn ngữ học thuật."
+                    </p>
+                  </div>
+                  
                   <p>
                     Việc cải tiến prompt dựa trên các nguyên tắc: cụ thể hóa yêu 
                     cầu, xác định đối tượng, định dạng kết quả mong muốn.
