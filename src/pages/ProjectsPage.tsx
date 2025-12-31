@@ -11,6 +11,9 @@ import chapter1Img3 from "@/assets/chapter1-img3.jpg";
 import chapter2Img1 from "@/assets/chapter2-img1.jpg";
 import chapter2Img2 from "@/assets/chapter2-img2.jpg";
 import chapter2Img3 from "@/assets/chapter2-img3.jpg";
+import chapter3Img1 from "@/assets/chapter3-img1.jpg";
+import chapter3Img2 from "@/assets/chapter3-img2.jpg";
+import chapter3Img3 from "@/assets/chapter3-img3.jpg";
 
 const ProjectsPage = () => {
   return (
@@ -184,9 +187,9 @@ const ProjectsPage = () => {
               evidence={
                 <EvidenceGallery
                   items={[
-                    { type: "image", label: "Prompt cơ bản", caption: "Prompt cơ bản tuy nhanh nhưng dễ sinh ra kết quả chung chung." },
-                    { type: "image", label: "Prompt cải tiến", caption: "Prompt cải tiến là điểm cân bằng giữa ngắn gọn và chất lượng." },
-                    { type: "image", label: "Prompt nâng cao", caption: "Prompt nâng cao đầy đủ ngữ cảnh, đối tượng và định dạng đầu ra mong muốn." },
+                    { type: "image", src: chapter3Img1, label: "Prompt cơ bản", caption: "Prompt cơ bản tuy nhanh nhưng dễ sinh ra kết quả chung chung." },
+                    { type: "image", src: chapter3Img2, label: "Prompt cải tiến", caption: "Prompt cải tiến là điểm cân bằng giữa ngắn gọn và chất lượng." },
+                    { type: "image", src: chapter3Img3, label: "Prompt nâng cao", caption: "Prompt nâng cao đầy đủ ngữ cảnh, đối tượng và định dạng đầu ra mong muốn." },
                   ]}
                 />
               }
