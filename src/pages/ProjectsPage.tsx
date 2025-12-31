@@ -117,14 +117,15 @@ const ProjectsPage = () => {
               reflection={
                 <div className="space-y-3 text-body">
                   <p>
-                    Qua dự án này, tôi nhận ra sự khác biệt rõ rệt giữa nguồn tin 
-                    đáng tin cậy và không đáng tin cậy. Các nguồn học thuật như 
-                    bài báo từ tạp chí có phản biện (peer-reviewed) cung cấp thông 
-                    tin chính xác hơn so với các bài viết trên blog hay mạng xã hội.
+                    So với tìm kiếm thông thường, việc sử dụng các toán tử tìm kiếm 
+                    nâng cao giúp lọc kết quả chính xác và có giá trị học thuật cao 
+                    hơn. Các nguồn từ trang web giáo dục (.edu) và tài liệu PDF 
+                    thường có độ tin cậy cao do được biên soạn bởi các tổ chức học 
+                    thuật hoặc nhà nghiên cứu.
                   </p>
                   <p>
-                    Kỹ năng này đặc biệt quan trọng trong nghiên cứu học thuật, 
-                    giúp đảm bảo chất lượng của các bài luận và đề tài nghiên cứu.
+                    Việc kết hợp nhiều phương pháp tìm kiếm giúp nâng cao hiệu quả 
+                    thu thập thông tin và hạn chế các nguồn không chính thống.
                   </p>
                 </div>
               }
