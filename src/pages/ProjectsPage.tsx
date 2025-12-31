@@ -106,11 +106,9 @@ const ProjectsPage = () => {
               evidence={
                 <EvidenceGallery
                   items={[
-                    { type: "image", label: "Ảnh chụp sử dụng toán tử site:", caption: "Sử dụng toán tử site: để giới hạn tìm kiếm trong phạm vi nguồn học thuật uy tín." },
-                    { type: "image", label: "Ảnh chụp sử dụng toán tử filetype:", caption: "Sử dụng toán tử filetype:pdf để tìm kiếm tài liệu định dạng PDF." },
-                    { type: "image", label: "Ảnh chụp kết quả Google Scholar", caption: "Kết quả tìm kiếm từ Google Scholar với các bài báo học thuật có phản biện." },
-                    { type: "image", label: "Ảnh chụp đánh giá nguồn CRAAP", caption: "Áp dụng tiêu chí CRAAP để đánh giá độ tin cậy của nguồn thông tin." },
-                    { type: "image", label: "Ảnh chụp so sánh nguồn tin", caption: "So sánh độ tin cậy giữa nguồn học thuật và nguồn phi học thuật." },
+                    { type: "image", label: "Ảnh chụp kết quả tìm kiếm sử dụng dấu ngoặc kép", caption: "Ảnh chụp kết quả tìm kiếm sử dụng dấu ngoặc kép (\"…\") để tìm kiếm cụm từ chính xác." },
+                    { type: "image", label: "Ảnh chụp kết quả tìm kiếm sử dụng toán tử site:edu", caption: "Ảnh chụp kết quả tìm kiếm sử dụng toán tử site:edu để giới hạn nguồn học thuật." },
+                    { type: "image", label: "Ảnh chụp kết quả tìm kiếm sử dụng toán tử filetype:pdf", caption: "Ảnh chụp kết quả tìm kiếm sử dụng toán tử filetype:pdf để tìm tài liệu nghiên cứu học thuật." },
                   ]}
                 />
               }
