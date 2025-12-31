@@ -8,6 +8,9 @@ import { Video } from "lucide-react";
 import chapter1Img1 from "@/assets/chapter1-img1.jpg";
 import chapter1Img2 from "@/assets/chapter1-img2.jpg";
 import chapter1Img3 from "@/assets/chapter1-img3.jpg";
+import chapter2Img1 from "@/assets/chapter2-img1.jpg";
+import chapter2Img2 from "@/assets/chapter2-img2.jpg";
+import chapter2Img3 from "@/assets/chapter2-img3.jpg";
 
 const ProjectsPage = () => {
   return (
@@ -106,9 +109,9 @@ const ProjectsPage = () => {
               evidence={
                 <EvidenceGallery
                   items={[
-                    { type: "image", label: "Ảnh chụp kết quả tìm kiếm sử dụng dấu ngoặc kép", caption: "Ảnh chụp kết quả tìm kiếm sử dụng dấu ngoặc kép (\"…\") để tìm kiếm cụm từ chính xác." },
-                    { type: "image", label: "Ảnh chụp kết quả tìm kiếm sử dụng toán tử site:edu", caption: "Ảnh chụp kết quả tìm kiếm sử dụng toán tử site:edu để giới hạn nguồn học thuật." },
-                    { type: "image", label: "Ảnh chụp kết quả tìm kiếm sử dụng toán tử filetype:pdf", caption: "Ảnh chụp kết quả tìm kiếm sử dụng toán tử filetype:pdf để tìm tài liệu nghiên cứu học thuật." },
+                    { type: "image", label: "Ảnh chụp kết quả tìm kiếm sử dụng dấu ngoặc kép", caption: "Ảnh chụp kết quả tìm kiếm sử dụng dấu ngoặc kép (\"…\") để tìm kiếm cụm từ chính xác.", src: chapter2Img1 },
+                    { type: "image", label: "Ảnh chụp kết quả tìm kiếm sử dụng toán tử site:edu", caption: "Ảnh chụp kết quả tìm kiếm sử dụng toán tử site:edu để giới hạn nguồn học thuật.", src: chapter2Img2 },
+                    { type: "image", label: "Ảnh chụp kết quả tìm kiếm sử dụng toán tử filetype:pdf", caption: "Ảnh chụp kết quả tìm kiếm sử dụng toán tử filetype:pdf để tìm tài liệu nghiên cứu học thuật.", src: chapter2Img3 },
                   ]}
                 />
               }
