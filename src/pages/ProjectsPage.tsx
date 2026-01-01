@@ -309,15 +309,16 @@ const ProjectsPage = () => {
               reflection={
                 <div className="space-y-3 text-body">
                   <p>
-                    AI đóng vai trò như một công cụ hỗ trợ sáng tạo, không thay 
-                    thế hoàn toàn quá trình sáng tạo của con người. Vai trò của 
-                    người dùng vẫn quan trọng trong việc định hướng, chỉnh sửa, 
-                    và đảm bảo chất lượng cuối cùng.
+                    AI hoạt động như một công cụ hỗ trợ sáng tạo, đóng vai trò thúc đẩy 
+                    quá trình phát triển ý tưởng mà không thay thế hoàn toàn vai trò của 
+                    con người. Người dùng vẫn giữ vai trò then chốt trong việc định hướng, 
+                    điều chỉnh, và đảm bảo chất lượng cuối cùng của sản phẩm.
                   </p>
                   <p>
-                    Lợi ích rõ rệt là tiết kiệm thời gian ở các bước tạo bản thảo 
-                    và ý tưởng. Hạn chế là kết quả AI cần được kiểm tra và chỉnh 
-                    sửa để phù hợp với mục đích cụ thể.
+                    Việc ứng dụng AI mang lại lợi ích rõ rệt, đặc biệt là tiết kiệm thời gian 
+                    trong khâu phát triển bản thảo và khám phá ý tưởng mới. Tuy nhiên, kết quả 
+                    từ AI cần được kiểm tra kỹ lưỡng và chỉnh sửa để phù hợp với mục tiêu và 
+                    tiêu chuẩn cụ thể, đảm bảo sản phẩm cuối cùng đạt hiệu quả tối ưu.
                   </p>
                 </div>
               }
