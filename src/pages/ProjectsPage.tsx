@@ -281,15 +281,30 @@ const ProjectsPage = () => {
                 </div>
               }
               evidence={
-                <EvidenceGallery
-                  defaultOpen={true}
-                  items={[
-                    { type: "image", label: "Xây dựng kịch bản và prompt nội dung video bằng ChatGPT", caption: "", src: chapter5Evidence1 },
-                    { type: "image", label: "Tạo hình ảnh nhân vật minh họa bằng công cụ AI Whisk", caption: "", src: chapter5Evidence2 },
-                    { type: "image", label: "Tạo video giáo dục bằng công cụ AI Veo 3", caption: "", src: chapter5Evidence3 },
-                    { type: "video", label: "Video giáo dục hoàn chỉnh", caption: "" },
-                  ]}
-                />
+                <>
+                  <EvidenceGallery
+                    defaultOpen={true}
+                    items={[
+                      { type: "image", label: "Xây dựng kịch bản và prompt nội dung video bằng ChatGPT", caption: "", src: chapter5Evidence1 },
+                      { type: "image", label: "Tạo hình ảnh nhân vật minh họa bằng công cụ AI Whisk", caption: "", src: chapter5Evidence2 },
+                      { type: "image", label: "Tạo video giáo dục bằng công cụ AI Veo 3", caption: "", src: chapter5Evidence3 },
+                    ]}
+                  />
+                  
+                  <div className="mt-4">
+                    <div className="aspect-video w-full rounded-lg overflow-hidden border border-border">
+                      <iframe
+                        src="https://drive.google.com/file/d/1gwujZFrnNUsevJJZAok8xp7TLOCneSIl/preview"
+                        className="w-full h-full"
+                        allow="autoplay"
+                        allowFullScreen
+                      />
+                    </div>
+                    <p className="text-sm text-caption italic text-center mt-2">
+                      Video giáo dục được tạo hoàn toàn bằng AI
+                    </p>
+                  </div>
+                </>
               }
               reflection={
                 <div className="space-y-3 text-body">
