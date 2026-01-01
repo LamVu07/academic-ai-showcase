@@ -20,6 +20,9 @@ import chapter4Img2 from "@/assets/chapter4-img2.jpg";
 import chapter5Img1 from "@/assets/chapter5-img1.jpg";
 import chapter5Img2 from "@/assets/chapter5-img2.jpg";
 import chapter5Img3 from "@/assets/chapter5-img3.jpg";
+import chapter5Evidence1 from "@/assets/chapter5-evidence1.jpg";
+import chapter5Evidence2 from "@/assets/chapter5-evidence2.jpg";
+import chapter5Evidence3 from "@/assets/chapter5-evidence3.jpg";
 
 const ProjectsPage = () => {
   return (
@@ -321,12 +324,10 @@ const ProjectsPage = () => {
                 <EvidenceGallery
                   defaultOpen={true}
                   items={[
-                    { type: "image", label: "Ảnh chụp lên ý tưởng với AI", caption: "Sử dụng AI để brainstorm ý tưởng và xây dựng dàn ý cho video giáo dục." },
-                    { type: "image", label: "Ảnh chụp kịch bản video", caption: "Kịch bản video được viết với sự hỗ trợ của công cụ AI." },
-                    { type: "image", label: "Ảnh chụp tạo hình ảnh AI", caption: "Sử dụng công cụ AI tạo sinh để tạo hình ảnh minh họa cho video." },
-                    { type: "image", label: "Ảnh chụp giao diện chỉnh sửa", caption: "Giao diện phần mềm chỉnh sửa video với các lớp nội dung và timeline." },
-                    { type: "image", label: "Ảnh chụp xuất bản video", caption: "Quá trình xuất bản và hoàn thiện video giáo dục cuối cùng." },
-                    { type: "video", label: "Video giáo dục hoàn chỉnh", caption: "Video giáo dục hoàn chỉnh (dưới 5 phút) về chủ đề đã chọn." },
+                    { type: "image", label: "Xây dựng kịch bản và prompt nội dung video bằng ChatGPT", caption: "", src: chapter5Evidence1 },
+                    { type: "image", label: "Tạo hình ảnh nhân vật minh họa bằng công cụ AI Whisk", caption: "", src: chapter5Evidence2 },
+                    { type: "image", label: "Tạo video giáo dục bằng công cụ AI Veo 3", caption: "", src: chapter5Evidence3 },
+                    { type: "video", label: "Video giáo dục hoàn chỉnh", caption: "" },
                   ]}
                 />
               }
