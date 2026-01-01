@@ -14,6 +14,8 @@ import chapter2Img3 from "@/assets/chapter2-img3.jpg";
 import chapter3Img1 from "@/assets/chapter3-img1.jpg";
 import chapter3Img2 from "@/assets/chapter3-img2.jpg";
 import chapter3Img3 from "@/assets/chapter3-img3.jpg";
+import chapter4Img1 from "@/assets/chapter4-img1.jpg";
+import chapter4Img2 from "@/assets/chapter4-img2.jpg";
 
 const ProjectsPage = () => {
   return (
@@ -233,12 +235,8 @@ const ProjectsPage = () => {
               evidence={
                 <EvidenceGallery
                   items={[
-                    { type: "image", label: "Ảnh chụp thiết lập workspace", caption: "Giao diện thiết lập không gian làm việc nhóm trên Trello/Notion." },
-                    { type: "image", label: "Ảnh chụp bảng Kanban", caption: "Bảng Kanban với các cột trạng thái: Cần làm, Đang làm, Hoàn thành." },
-                    { type: "image", label: "Ảnh chụp phân công nhiệm vụ", caption: "Giao diện phân công nhiệm vụ cho từng thành viên trong nhóm." },
-                    { type: "image", label: "Ảnh chụp theo dõi tiến độ", caption: "Biểu đồ hoặc báo cáo theo dõi tiến độ hoàn thành công việc." },
-                    { type: "image", label: "Ảnh chụp chia sẻ tài liệu", caption: "Giao diện chia sẻ tài liệu và bình luận phản hồi giữa các thành viên." },
-                    { type: "video", label: "Video hướng dẫn sử dụng", caption: "Video ngắn hướng dẫn quy trình sử dụng công cụ hợp tác trong dự án nhóm." },
+                    { type: "image", src: chapter4Img1, label: "Bảng kế hoạch và phân chia công việc nhóm trên Notion", caption: "" },
+                    { type: "image", src: chapter4Img2, label: "Theo dõi trạng thái và tiến độ của từng nhiệm vụ trong dự án nhóm", caption: "" },
                   ]}
                 />
               }
