@@ -1,6 +1,7 @@
 import Layout from "@/components/layout/Layout";
 import SectionTitle from "@/components/ui/SectionTitle";
 import { User, GraduationCap, Target, BookOpen } from "lucide-react";
+import avatarImg from "@/assets/avatar.jpg";
 
 const AboutPage = () => {
   return (
@@ -9,8 +10,8 @@ const AboutPage = () => {
       <section className="bg-section-bg py-16 lg:py-24">
         <div className="container-academic">
           <div className="max-w-3xl mx-auto text-center animate-fade-in">
-            <div className="w-24 h-24 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
-              <span className="text-primary-foreground font-bold text-3xl">VL</span>
+            <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-6">
+              <img src={avatarImg} alt="Vũ Hoàng Lâm" className="w-full h-full object-cover" />
             </div>
             <h1 className="text-3xl lg:text-4xl font-bold text-heading mb-4">
               Vũ Hoàng Lâm
