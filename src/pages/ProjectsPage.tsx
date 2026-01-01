@@ -327,75 +327,55 @@ const ProjectsPage = () => {
             {/* Project 6 */}
             <ProjectCard
               chapterNumber={6}
-              title="Sử dụng trí tuệ nhân tạo có trách nhiệm trong học tập"
+              title="Sử dụng AI có trách nhiệm trong học tập và nghiên cứu"
               objectives={[
-                "Hiểu các vấn đề đạo đức liên quan đến sử dụng AI",
-                "Phát triển nguyên tắc sử dụng AI có trách nhiệm",
+                "Hiểu các vấn đề đạo đức và liêm chính học thuật liên quan đến việc sử dụng AI trong học tập và nghiên cứu.",
+                "Phát triển bộ nguyên tắc cá nhân về việc sử dụng AI một cách có trách nhiệm và hiệu quả.",
               ]}
               process={
                 <div className="space-y-3 text-body">
-                  <p>
-                    Dự án này phân tích các khía cạnh đạo đức và liêm chính học 
-                    thuật khi sử dụng AI trong bối cảnh giáo dục:
-                  </p>
-                  <ul className="list-disc list-inside space-y-1 pl-4">
-                    <li>Nghiên cứu các trường hợp vi phạm liêm chính học thuật liên quan đến AI</li>
-                    <li>Phân tích ranh giới giữa hỗ trợ hợp lệ và gian lận</li>
-                    <li>Tìm hiểu chính sách AI của các trường đại học</li>
-                    <li>Xây dựng bộ nguyên tắc cá nhân</li>
+                  <p>Dự án được thực hiện theo các bước sau:</p>
+                  <ul className="list-disc list-inside space-y-2 pl-4">
+                    <li>Nghiên cứu các trường hợp vi phạm liêm chính học thuật liên quan đến AI để hiểu các rủi ro và hậu quả.</li>
+                    <li>Phân tích ranh giới giữa hỗ trợ hợp lệ và gian lận, xác định những cách sử dụng AI được coi là đạo đức.</li>
+                    <li>Tìm hiểu chính sách AI của các trường đại học nhằm nắm vững các quy định và hướng dẫn hiện hành.</li>
+                    <li>Xây dựng bộ nguyên tắc cá nhân dựa trên nghiên cứu, nhằm đảm bảo sử dụng AI có trách nhiệm.</li>
                   </ul>
                 </div>
               }
               evidence={
-                <EvidenceGallery
-                  items={[
-                    { type: "image", label: "Sơ đồ nguyên tắc đạo đức AI", caption: "Sơ đồ tổng quan các nguyên tắc đạo đức khi sử dụng AI trong học tập." },
-                    { type: "image", label: "Bảng phân tích trường hợp", caption: "Bảng phân tích các trường hợp vi phạm và tuân thủ liêm chính học thuật." },
-                    { type: "image", label: "Ảnh chụp chính sách AI trường ĐH", caption: "Tổng hợp chính sách sử dụng AI của các trường đại học trong và ngoài nước." },
-                    { type: "image", label: "Infographic ranh giới AI", caption: "Infographic minh họa ranh giới giữa hỗ trợ hợp lệ và gian lận học thuật." },
-                    { type: "image", label: "Bộ nguyên tắc cá nhân", caption: "Bộ 7 nguyên tắc cá nhân về sử dụng AI có trách nhiệm được trình bày dạng poster." },
-                  ]}
-                />
+                <p className="text-muted-foreground italic">Không có minh chứng đính kèm.</p>
               }
               reflection={
                 <div className="space-y-4 text-body">
                   <p className="font-medium text-heading">
-                    7 nguyên tắc cá nhân về sử dụng AI có trách nhiệm trong học tập:
+                    Bộ nguyên tắc cá nhân về sử dụng AI có trách nhiệm trong học tập và nghiên cứu:
                   </p>
                   <ol className="list-decimal list-inside space-y-2 pl-4">
                     <li>
-                      <strong>Minh bạch:</strong> Luôn ghi nhận và trích dẫn khi 
-                      sử dụng AI trong bài tập
+                      <strong>Minh bạch:</strong> Luôn ghi nhận và trích dẫn khi sử dụng AI trong bài tập hoặc nghiên cứu.
                     </li>
                     <li>
-                      <strong>Hỗ trợ, không thay thế:</strong> Sử dụng AI như 
-                      công cụ học tập, không phải để thay thế quá trình tư duy
+                      <strong>Hỗ trợ, không thay thế:</strong> Sử dụng AI như công cụ hỗ trợ học tập, không thay thế quá trình tư duy và phát triển ý tưởng cá nhân.
                     </li>
                     <li>
-                      <strong>Kiểm chứng:</strong> Luôn xác minh thông tin từ AI 
-                      với nguồn đáng tin cậy
+                      <strong>Kiểm chứng:</strong> Luôn xác minh thông tin từ AI với các nguồn đáng tin cậy trước khi đưa vào sản phẩm học tập.
                     </li>
                     <li>
-                      <strong>Tuân thủ quy định:</strong> Nắm rõ và tuân theo 
-                      chính sách AI của trường và môn học
+                      <strong>Tuân thủ quy định:</strong> Nắm rõ và tuân theo chính sách AI của trường và môn học.
                     </li>
                     <li>
-                      <strong>Phát triển kỹ năng:</strong> Ưu tiên học hỏi kỹ 
-                      năng mới thay vì chỉ nhận kết quả có sẵn
+                      <strong>Phát triển kỹ năng:</strong> Ưu tiên học hỏi và rèn luyện kỹ năng mới thay vì chỉ nhận kết quả có sẵn từ AI.
                     </li>
                     <li>
-                      <strong>Bảo mật thông tin:</strong> Không chia sẻ thông 
-                      tin cá nhân hoặc nhạy cảm với AI
+                      <strong>Bảo mật thông tin:</strong> Không chia sẻ dữ liệu cá nhân hoặc nhạy cảm với AI.
                     </li>
                     <li>
-                      <strong>Sử dụng có mục đích:</strong> Xác định rõ mục tiêu 
-                      trước khi sử dụng công cụ AI
+                      <strong>Sử dụng có mục đích:</strong> Xác định rõ mục tiêu và kế hoạch khi sử dụng công cụ AI.
                     </li>
                   </ol>
                   <p className="mt-4">
-                    Đạo đức trong sử dụng AI không chỉ là tuân thủ quy định mà 
-                    còn là cam kết với sự phát triển bản thân và đóng góp cho 
-                    cộng đồng học thuật.
+                    Áp dụng những nguyên tắc này giúp người học tận dụng AI hiệu quả mà vẫn đảm bảo trách nhiệm và đạo đức trong học tập và nghiên cứu, đồng thời phát triển kỹ năng và tư duy cá nhân.
                   </p>
                 </div>
               }
