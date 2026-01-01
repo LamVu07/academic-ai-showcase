@@ -243,14 +243,10 @@ const ProjectsPage = () => {
               reflection={
                 <div className="space-y-3 text-body">
                   <p>
-                    Công cụ hợp tác trực tuyến mang lại nhiều lợi ích cho học tập 
-                    nhóm: minh bạch hóa công việc, dễ dàng theo dõi tiến độ, và 
-                    giảm thiểu xung đột do hiểu lầm về phân công.
+                    Trong dự án nhóm, tôi sử dụng Notion như một công cụ quản lý và phối hợp công việc. Toàn bộ dự án được chia thành các nhiệm vụ cụ thể theo từng nội dung nghiên cứu, mỗi nhiệm vụ được gán trạng thái để theo dõi tiến độ thực hiện. Việc tập trung các nhiệm vụ trên một nền tảng chung giúp các thành viên dễ dàng nắm bắt công việc của mình cũng như tiến độ chung của dự án.
                   </p>
                   <p>
-                    Tuy nhiên, hiệu quả của công cụ phụ thuộc vào việc tất cả 
-                    thành viên cùng sử dụng và cập nhật thường xuyên. Đây là bài 
-                    học quan trọng về kỷ luật làm việc nhóm trong môi trường số.
+                    Từ quá trình trực tiếp sử dụng công cụ hợp tác trực tuyến, tôi nhận thấy các công cụ này mang lại nhiều lợi ích cho học tập nhóm như minh bạch hóa công việc, dễ dàng theo dõi tiến độ và giảm thiểu xung đột do hiểu lầm về phân công. Tuy nhiên, hiệu quả của công cụ phụ thuộc vào việc tất cả thành viên cùng sử dụng và cập nhật thường xuyên. Đây là bài học quan trọng về kỷ luật làm việc nhóm trong môi trường số.
                   </p>
                 </div>
               }
