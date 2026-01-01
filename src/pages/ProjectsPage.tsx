@@ -3,6 +3,7 @@ import SectionTitle from "@/components/ui/SectionTitle";
 import ProjectCard from "@/components/projects/ProjectCard";
 import PlaceholderImage from "@/components/ui/PlaceholderImage";
 import EvidenceGallery from "@/components/projects/EvidenceGallery";
+import ImageZoom from "@/components/ui/ImageZoom";
 import { Video } from "lucide-react";
 
 import chapter1Img1 from "@/assets/chapter1-img1.jpg";
@@ -16,6 +17,9 @@ import chapter3Img2 from "@/assets/chapter3-img2.jpg";
 import chapter3Img3 from "@/assets/chapter3-img3.jpg";
 import chapter4Img1 from "@/assets/chapter4-img1.jpg";
 import chapter4Img2 from "@/assets/chapter4-img2.jpg";
+import chapter5Img1 from "@/assets/chapter5-img1.jpg";
+import chapter5Img2 from "@/assets/chapter5-img2.jpg";
+import chapter5Img3 from "@/assets/chapter5-img3.jpg";
 
 const ProjectsPage = () => {
   return (
@@ -261,7 +265,7 @@ const ProjectsPage = () => {
                 "Hiểu quy trình sáng tạo có hỗ trợ AI",
               ]}
               process={
-                <div className="space-y-3 text-body">
+                <div className="space-y-4 text-body">
                   <p>
                     Dự án này được thực hiện nhằm lập kế hoạch và sản xuất một video giáo dục ngắn về khái niệm Trí tuệ nhân tạo (AI) với sự hỗ trợ của các công cụ AI tạo sinh. Quá trình thực hiện gồm các bước sau:
                   </p>
@@ -271,6 +275,46 @@ const ProjectsPage = () => {
                     <li>Ứng dụng công cụ AI tạo video Veo 3 để tạo các đoạn video ngắn dựa trên kịch bản và hình ảnh nhân vật, sau đó chỉnh sửa và ghép nối để đảm bảo tính liền mạch</li>
                     <li>Hoàn thiện và xuất bản video giáo dục hoàn chỉnh, sẵn sàng tích hợp vào Portfolio học tập</li>
                   </ul>
+                  
+                  {/* Process Image Gallery */}
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+                    <figure className="space-y-2">
+                      <ImageZoom src={chapter5Img1} alt="Sử dụng ChatGPT để xây dựng kịch bản">
+                        <img 
+                          src={chapter5Img1} 
+                          alt="Sử dụng ChatGPT để xây dựng kịch bản" 
+                          className="w-full h-48 object-cover rounded-lg border border-border hover:opacity-90 transition-opacity"
+                        />
+                      </ImageZoom>
+                      <figcaption className="text-sm text-caption text-center font-medium">
+                        Sử dụng ChatGPT để xây dựng kịch bản và prompt nội dung video
+                      </figcaption>
+                    </figure>
+                    <figure className="space-y-2">
+                      <ImageZoom src={chapter5Img2} alt="Tạo hình ảnh nhân vật bằng Whisk">
+                        <img 
+                          src={chapter5Img2} 
+                          alt="Tạo hình ảnh nhân vật bằng Whisk" 
+                          className="w-full h-48 object-cover rounded-lg border border-border hover:opacity-90 transition-opacity"
+                        />
+                      </ImageZoom>
+                      <figcaption className="text-sm text-caption text-center font-medium">
+                        Tạo hình ảnh nhân vật minh họa bằng công cụ AI Whisk
+                      </figcaption>
+                    </figure>
+                    <figure className="space-y-2">
+                      <ImageZoom src={chapter5Img3} alt="Sử dụng Veo 3 để tạo video">
+                        <img 
+                          src={chapter5Img3} 
+                          alt="Sử dụng Veo 3 để tạo video" 
+                          className="w-full h-48 object-cover rounded-lg border border-border hover:opacity-90 transition-opacity"
+                        />
+                      </ImageZoom>
+                      <figcaption className="text-sm text-caption text-center font-medium">
+                        Sử dụng Veo 3 để tạo video giáo dục từ kịch bản và hình ảnh nhân vật
+                      </figcaption>
+                    </figure>
+                  </div>
                 </div>
               }
               evidence={
