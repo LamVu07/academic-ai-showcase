@@ -263,14 +263,13 @@ const ProjectsPage = () => {
               process={
                 <div className="space-y-3 text-body">
                   <p>
-                    Dự án này thực hiện lập kế hoạch và sản xuất một video giáo 
-                    dục ngắn với sự hỗ trợ của công cụ AI:
+                    Dự án này được thực hiện nhằm lập kế hoạch và sản xuất một video giáo dục ngắn về khái niệm Trí tuệ nhân tạo (AI) với sự hỗ trợ của các công cụ AI tạo sinh. Quá trình thực hiện gồm các bước sau:
                   </p>
-                  <ul className="list-disc list-inside space-y-1 pl-4">
-                    <li>Lên ý tưởng và viết kịch bản với hỗ trợ AI</li>
-                    <li>Sử dụng công cụ AI để tạo hình ảnh minh họa</li>
-                    <li>Chỉnh sửa và hoàn thiện nội dung</li>
-                    <li>Xuất bản video giáo dục hoàn chỉnh</li>
+                  <ul className="list-disc list-inside space-y-2 pl-4">
+                    <li>Lên ý tưởng và xây dựng kịch bản nội dung video với sự hỗ trợ của ChatGPT, đảm bảo nội dung ngắn gọn, rõ ràng và phù hợp với mục tiêu truyền đạt kiến thức</li>
+                    <li>Sử dụng công cụ AI tạo sinh hình ảnh Whisk để thiết kế nhân vật minh họa cho video, làm cơ sở chuẩn hóa hình ảnh nhân vật xuyên suốt nội dung</li>
+                    <li>Ứng dụng công cụ AI tạo video Veo 3 để tạo các đoạn video ngắn dựa trên kịch bản và hình ảnh nhân vật, sau đó chỉnh sửa và ghép nối để đảm bảo tính liền mạch</li>
+                    <li>Hoàn thiện và xuất bản video giáo dục hoàn chỉnh, sẵn sàng tích hợp vào Portfolio học tập</li>
                   </ul>
                 </div>
               }
