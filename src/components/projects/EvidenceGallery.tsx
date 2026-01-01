@@ -76,9 +76,16 @@ const EvidenceGallery = ({ items, defaultOpen = false }: EvidenceGalleryProps) =
                   </div>
                 </div>
               )}
-              <figcaption className="text-xs text-caption italic text-center px-2">
-                <span className="font-medium text-heading">Hình {index + 1}.</span> {item.caption}
-              </figcaption>
+              {item.caption && (
+                <figcaption className="text-xs text-caption italic text-center px-2">
+                  <span className="font-medium text-heading">Hình {index + 1}.</span> {item.caption}
+                </figcaption>
+              )}
+              {!item.caption && item.label && (
+                <figcaption className="text-xs text-heading font-medium text-center px-2">
+                  Hình {index + 1}. {item.label}
+                </figcaption>
+              )}
             </figure>
           ))}
         </div>
